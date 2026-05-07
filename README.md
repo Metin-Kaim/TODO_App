@@ -3,6 +3,12 @@
 Modern ve responsive bir Todo uygulaması.  
 Bu proje, ReactJS ve Tailwind CSS kullanılarak geliştirilmiştir.
 
+## 🌍 Canlı Proje
+
+🔗 Live Demo:
+
+https://todo-app-organizer.netlify.app/
+
 ## 🔩 Özellikler
 
 - Todo ekleme
