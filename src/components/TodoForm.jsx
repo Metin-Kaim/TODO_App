@@ -17,7 +17,7 @@ function TodoForm({ addTodo }) {
     return (
         <form
             onSubmit={handleSubmit}
-            className="flex gap-3 mb-6"
+            className="flex flex-col sm:flex-row gap-3 mb-6"
         >
             <input
                 type="text"
@@ -29,7 +29,7 @@ function TodoForm({ addTodo }) {
 
             <button
                 type="submit"
-                className="bg-blue-500 hover:bg-blue-600 shadow-md hover:shadow-lg text-white px-5 py-3 rounded-xl transition-all duration-200  hover:scale-105  hover:shadow-md  active:scale-95"
+                className="bg-blue-500 hover:bg-blue-600 shadow-md hover:shadow-lg text-white px-5 py-3 rounded-xl transition-all duration-200 sm:w-auto w-full shrink-0 hover:scale-105  hover:shadow-md  active:scale-95"
             >
                 Ekle
             </button>
