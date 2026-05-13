@@ -90,24 +90,24 @@ function Home() {
                 <TodoForm addTodo={addTodo} />
 
                 <div className="flex flex-wrap items-center justify-between gap-4 mb-6">
-                    <div className="flex gap-2">
+                    <div className="flex flex-wrap gap-2 w-full sm:w-auto">
                         <button
                             onClick={() => setFilter("all")}
-                            className={`px-4 py-2 rounded-lg  transition-all duration-200  hover:scale-105  hover:shadow-md  active:scale-95  ${filter === "all" ? "bg-blue-500 text-white shadow-md" : "bg-gray-200 hover:bg-gray-300"}`}
+                            className={`flex-1 sm:flex-none px-4 py-2 rounded-lg text-sm sm:text-base  transition-all duration-200  hover:scale-105  hover:shadow-md  active:scale-95  ${filter === "all" ? "bg-blue-500 text-white shadow-md" : "bg-gray-200 hover:bg-gray-300"}`}
                         >
                             Tümü
                         </button>
 
                         <button
                             onClick={() => setFilter("active")}
-                            className={`px-4 py-2 rounded-lg  transition-all duration-200  hover:scale-105  hover:shadow-md  active:scale-95  ${filter === "active" ? "bg-blue-500 text-white shadow-md" : "bg-gray-200 hover:bg-gray-300"}`}
+                            className={`flex-1 sm:flex-none px-4 py-2 rounded-lg text-sm sm:text-base  transition-all duration-200  hover:scale-105  hover:shadow-md  active:scale-95  ${filter === "active" ? "bg-blue-500 text-white shadow-md" : "bg-gray-200 hover:bg-gray-300"}`}
                         >
                             Aktif
                         </button>
 
                         <button
                             onClick={() => setFilter("completed")}
-                            className={`px-4 py-2 rounded-lg transition-all duration-200  hover:scale-105  hover:shadow-md  active:scale-95  ${filter === "completed" ? "bg-blue-500 text-white shadow-md" : "bg-gray-200 hover:bg-gray-300"}`}
+                            className={`flex-1 sm:flex-none px-4 py-2 rounded-lg text-sm sm:text-base transition-all duration-200  hover:scale-105  hover:shadow-md  active:scale-95  ${filter === "completed" ? "bg-blue-500 text-white shadow-md" : "bg-gray-200 hover:bg-gray-300"}`}
                         >
                             Tamamlanan
                         </button>
